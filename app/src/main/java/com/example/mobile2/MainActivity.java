@@ -1,5 +1,6 @@
 package com.example.mobile2;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -7,24 +8,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.mobile2.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_welcome);
+    private ActivityMainBinding binding;
 
-//        Button button = findViewById(R.id.button_enter);
-//        button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openNewActivity();
-//            }
-//        });
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
     }
-//    public void openNewActivity(){
-//        Intent intent = new Intent(this, SecondActivity.class);
-//        startActivity(intent);
-//    }
+
+
 }
 
