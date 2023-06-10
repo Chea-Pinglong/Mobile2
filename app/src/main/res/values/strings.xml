@@ -13,4 +13,28 @@
     <string name="search">Search</string>
     <string name="profile">Profile</string>
     <string name="more">More</string>
+
+    <string name="faculty_of_engineering">Faculty of Engineering</string>
+    <string name="name">Ping long</string>
+    <string name="major">Major</string>
+    <string name="it_engineering">IT Engineering</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="dob">DoB</string>
+    <string name="_30_december_2002">30 December 2002</string>
+    <string name="pob">PoB</string>
+    <string name="phnom_penh">Phnom Penh</string>
+    <string name="phone">Phone</string>
+    <string name="hello_name">Hello</string>
+    <string name="logo">Logo</string>
+    <string name="hello_kim">Hello Ping</string>
+    <string name="popular_courses">Popular Course</string>
+    <string name="see_all">See All</string>
+    <string name="all_courses">All Courses</string>
+    <string name="continue_to_mobile_app_dev_course">Continue to Mobile App Dev Course</string>
+    <string name="percent_complete">65%</string>
+    <string name="language">language</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="customer_support">Customer Support</string>
+    <string name="setting">Setting</string>
 </resources>
