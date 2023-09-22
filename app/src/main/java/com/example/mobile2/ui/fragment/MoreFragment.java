@@ -1,4 +1,4 @@
-package com.example.mobile2;
+package com.example.mobile2.ui.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,17 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.mobile2.databinding.FragmentProfileBinding;
+import com.example.mobile2.databinding.FragmentMoreBinding;
 
-public class ProfileFragment extends Fragment {
-
-    private FragmentProfileBinding binding;
+public class MoreFragment extends Fragment {
+    private FragmentMoreBinding binding;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-    binding = FragmentProfileBinding.inflate(inflater,container,false);
-    return binding.getRoot();
+        binding = FragmentMoreBinding.inflate(inflater,container,false);
+        return binding.getRoot();
     }
 }

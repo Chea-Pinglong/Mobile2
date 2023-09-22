@@ -1,20 +1,20 @@
-package com.example.mobile2;
+package com.example.mobile2.ui.activity;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
+import com.example.mobile2.R;
 import com.example.mobile2.databinding.ActivityMainBinding;
-import com.google.android.material.navigation.NavigationBarView;
+import com.example.mobile2.ui.fragment.HomeFragment;
+import com.example.mobile2.ui.fragment.MoreFragment;
+import com.example.mobile2.ui.fragment.ProfileFragment;
+import com.example.mobile2.ui.fragment.ProvinceFragment;
+import com.example.mobile2.ui.fragment.SearchFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        showFragment(new HomeFragment());
 
         binding.buttomNavigationView.setOnItemSelectedListener(item -> {
 
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             return true;
+
         });
     }
 
